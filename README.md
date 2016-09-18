@@ -1,5 +1,6 @@
 # TwitterMediaScraper
 Stop manually downloading hundreds of twitter images, have some scripts do it for you.  
+For downloading all of a particular Twitter user's media, specifically static images.  
   
 Scraper is for : any person with a web browser and access to Twitter.  
 Extension Chopper is for : people using an Apple OS with access to Automator.app.  
