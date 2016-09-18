@@ -57,7 +57,7 @@ function main(){
 			el.appendChild(el_ac);
 			document.body.appendChild(el);},
 		main : function(){
-			// back from console.log from the wicked clutches of the Twitter dev team
+			// take back console.log from the wicked clutches of the Twitter dev team
 			var el = document.createElement("iframe");
 			el.style.display = "none";
 			document.body.appendChild(el);
