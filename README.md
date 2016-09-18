@@ -1,6 +1,9 @@
 # TwitterMediaScraper
 Stop manually downloading hundreds of twitter images, have some scripts do it for you.  
   
+Scraper is for : any person with a web browser and access to Twitter.  
+Extension Chopper is for : people using an Apple OS with access to Automator.app.  
+  
 Downloading the images  
 (1) Navigate to a twitter user's media feed, such as https://twitter.com/[[[USERNAME_HERE]]]/media  
 (2) Open your browser's JavaScript Console for that page. The location of this can change over the years. It sounds bad, but please just look up how to open it for your particular browser. In Chrome for Apple OSs, it's command+option+I.  
