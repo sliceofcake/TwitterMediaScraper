@@ -1,4 +1,4 @@
-# TwitterMediaScraper
+# TwitterMediaScraper  
 Stop manually downloading hundreds of twitter images, have some scripts do it for you.  
 For downloading all of a particular Twitter user's media, specifically static images.  
   
