@@ -1,4 +1,4 @@
-function main(){
+(function(){
 	var p = {
 		version : 1,
 		date : "17 Sep 2016",
@@ -106,4 +106,4 @@ function main(){
 				setTimeout(function(p){return function(){p.cycle();};}(this),this.deltaT/1000);}},
 	};
 	p.setup();
-}main();
+})();
