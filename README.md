@@ -26,7 +26,7 @@ rename *.jpg-orig *.jpg;rename *.png-orig *.png
 to chop off the "-orig" from all the files. Now all the images should be easily viewable.  
   
 [see the JavaScript Console Help section of [https://github.com/sliceofcake/TechnicalHelp](https://github.com/sliceofcake/TechnicalHelp)]  
-See the Command-Line Help section of [https://github.com/sliceofcake/TechnicalHelp](https://github.com/sliceofcake/TechnicalHelp)  
+[see the Command-Line Help section of [https://github.com/sliceofcake/TechnicalHelp](https://github.com/sliceofcake/TechnicalHelp)]  
   
 Use case  
 There are some artists that I follow on Twitter. Every day, I go through the previous 24 hours looking for drawings that I really like, and go through a lengthy process of clicking and typing in order to route those new images to folders, per artist, on my local computer. That's actually not too bad, because I need to look through the images anyway to decide which I want to save. The problem is when I find a new artist, with something like 500 to 1000 past images. It takes literally hours to look through all of them and go through the same saving process, which runs into a bunch of Twitter's idiosyncrasies. It would be much faster if I was able to download all the images automatically, then manually go through them, in an image viewer of my choice [a better one], to quickly delete the ones that I don't want. A multi-hour process just got reduced to a multi-minute process. I really like some artists, but spending three hours going through their images on Twitter in a factory-like manner is really rough.  
