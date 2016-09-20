@@ -1,15 +1,32 @@
 # TwitterMediaScraper  
-Stop manually downloading hundreds of twitter images, have some scripts do it for you.  
 For downloading all of a particular Twitter user's media, specifically static images.  
   
-Scraper is for : any person with a web browser and access to Twitter.  
-Extension Chopper is for : people using an Apple OS with access to Automator.app.  
+Required:  
+L> Web browser  
+L> Access to [twitter.com](twitter.com)  
+L> One of the following:  
+L> L> Apple OS and ability to use Automator.app to run a "workflow" [instructions provided]  
+L> L> Apple OS and ability to use the command-line [link to instructions provided]  
+L> L> Windows and ability to use the command-line [link to instructions provided]  
+Recommended:  
+L> Latest version of Apple OS  
+L> Latest version of Chrome web browser  
   
 Downloading the images  
-(1) Navigate to a twitter user's media feed, such as https://twitter.com/[[[USERNAME_HERE]]]/media  
-(2) Open your browser's JavaScript Console for that page. The location of this can change over the years. It sounds bad, but please just look up how to open it for your particular browser. In Chrome for Apple OSs, it's command+option+I.  
-(3) Paste in the text from twitterScrape.js, and hit your return/enter key to run the script. You will see a large description box placed at the top of the page. Read through it, and eventually click the relevant link/button to run the scraper, once you're ready.  
-(4) Relocate your downloaded images to their own folder, if they aren't already, and open twitterExtensionChop.workflow. Click the "Run" action [likely a button at the top]. This will bring up an OS file selection prompt. Navigate to the folder you just made, select all the images [command+A], and proceed [likely a "Choose" button at the bottom]. That workflow chopped off the "-orig" from all the files and now all the images should be easily viewable.  
+(1) Set your browser's automatic downloads folder to the folder that you want all the images to download into.  
+(2) Navigate to a twitter user's media feed, such as https://twitter.com/[[[USERNAME_HERE]]]/media  
+(3) Open your browser's JavaScript Console for that page.  
+(4) Paste in the text from twitterScrape.js and run it. You will see a large description box placed at the top of the page. Read through it, and eventually click the relevant link/button to run the scraper, once you're ready.  
+(5 [Apple OS Automator]) Relocate your downloaded images to their own folder, if they aren't already, and open twitterExtensionChop.workflow. Click the "Run" action [likely a button at the top]. This will bring up an OS file selection prompt. Navigate to the folder you just made, select all the images [command+A], and proceed [likely a "Choose" button at the bottom]. That workflow chopped off the "-orig" from all the files and now all the images should be easily viewable.  
+(5 [Apple OS command-line]) Relocate your downloaded images to their own folder, if they aren't already. Open a command-line for that folder. Run  
+for filename in *.jpg-orig;do mv "$filename" "${filename/.jpg-orig/.jpg}";done;for filename in *.png-orig;do mv "$filename" "${filename/.png-orig/.png}";done  
+to chop off the "-orig" from all the files. Now all the images should be easily viewable.  
+(5 [Windows command-line]) Relocate your downloaded images to their own folder, if they aren't already. Open a command-line for that folder. Run  
+rename *.jpg-orig *.jpg;rename *.png-orig *.png  
+to chop off the "-orig" from all the files. Now all the images should be easily viewable.  
+  
+[see the JavaScript Console Help section of [https://github.com/sliceofcake/TechnicalHelp](https://github.com/sliceofcake/TechnicalHelp)]  
+See the Command-Line Help section of [https://github.com/sliceofcake/TechnicalHelp](https://github.com/sliceofcake/TechnicalHelp)  
   
 Use case  
 There are some artists that I follow on Twitter. Every day, I go through the previous 24 hours looking for drawings that I really like, and go through a lengthy process of clicking and typing in order to route those new images to folders, per artist, on my local computer. That's actually not too bad, because I need to look through the images anyway to decide which I want to save. The problem is when I find a new artist, with something like 500 to 1000 past images. It takes literally hours to look through all of them and go through the same saving process, which runs into a bunch of Twitter's idiosyncrasies. It would be much faster if I was able to download all the images automatically, then manually go through them, in an image viewer of my choice [a better one], to quickly delete the ones that I don't want. A multi-hour process just got reduced to a multi-minute process. I really like some artists, but spending three hours going through their images on Twitter in a factory-like manner is really rough.  
