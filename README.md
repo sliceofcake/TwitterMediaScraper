@@ -18,7 +18,7 @@ Downloading the images
 (3) Open your browser's JavaScript Console for that page.  
 (4) Paste in the text from twitterScrape.js and run it. You will see a large description box placed at the top of the page. Read through it, and eventually click the relevant link/button to run the scraper, once you're ready.  
 (5 [Apple OS Automator]) Relocate your downloaded images to their own folder, if they aren't already, and open twitterExtensionChop.workflow. Click the "Run" action [likely a button at the top]. This will bring up an OS file selection prompt. Navigate to the folder you just made, select all the images [command+A], and proceed [likely a "Choose" button at the bottom]. That workflow chopped off the "-orig" from all the files and now all the images should be easily viewable.  
-(5 [Apple OS command-line]) Relocate your downloaded images to their own folder, if they aren't already. Open a command-line for that folder. Run  
+(5 [Apple OS command-line w/bash]) Relocate your downloaded images to their own folder, if they aren't already. Open a command-line for that folder. Run  
 for filename in *.jpg-orig;do mv "$filename" "${filename/.jpg-orig/.jpg}";done;for filename in *.png-orig;do mv "$filename" "${filename/.png-orig/.png}";done  
 to chop off the "-orig" from all the files. Now all the images should be easily viewable.  
 (5 [Windows command-line]) Relocate your downloaded images to their own folder, if they aren't already. Open a command-line for that folder. Run  
